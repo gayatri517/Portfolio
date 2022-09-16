@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="images/favicon.ico"><title>Projects</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Projects</title>
   <!-- bootstrap link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- fontawesome link -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- j query link for bootstrap to run -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
   <!-- css stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 
@@ -22,7 +26,7 @@
   html {
     overflow-y: scroll;
   }
-  
+
   body {
     justify-content: center;
     align-items: center;
@@ -31,226 +35,6 @@
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   }
 
-  body .container {
-    padding-left: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 40px 0;
-  }
-
-  body .container .card {
-    position: relative;
-    min-width: 320px;
-    height: 440px;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    margin: 30px;
-    transition: 0.5s;
-  }
-
-  body .container .card:nth-child(1) .box .content a {
-    background: #38495a;
-  }
-
-  body .container .card:nth-child(2) .box .content a {
-    background: #38495a;
-  }
-
-  body .container .card:nth-child(3) .box .content a {
-    background: #38495a;
-  }
-
-  body .container .card .box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: #2a2b2f;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-
-  body .container .card .box:hover {
-    transform: translateY(-50px);
-  }
-
-  body .container .card .box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.03);
-  }
-
-  body .container .card .box .content {
-    padding: 20px;
-    text-align: center;
-  }
-
-  body .container .card .box .content h2 {
-    position: absolute;
-    top: -10px;
-    right: 30px;
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.1);
-  }
-
-  body .container .card .box .content h3 {
-    font-size: 1.8rem;
-    color: #fff;
-    z-index: 1;
-    transition: 0.5s;
-    margin-bottom: 15px;
-  }
-
-  body .container .card .box .content p {
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    transition: 0.5s;
-  }
-
-  body .container .card .box .content a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    background: black;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-  }
-
-  body .container .card .box .content a:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    background: #fff;
-    color: #000;
-  }
-
-  /*ContainerOne */
-  body .containerOne {
-    padding-left: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 40px 0;
-  }
-
-  body .containerOne .card {
-    position: relative;
-    min-width: 320px;
-    height: 440px;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    margin: 30px;
-    transition: 0.5s;
-  }
-
-  body .containerOne .card:nth-child(1) .box .content a {
-    background: #38495a;
-  }
-
-  body .containerOne .card:nth-child(2) .box .content a {
-    background: #38495a;
-  }
-
-  body .containerOne .card:nth-child(3) .box .content a {
-    background: #38495a;
-  }
-
-  body .containerOne .card .box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: #2a2b2f;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-
-  body .containerOne .card .box:hover {
-    transform: translateY(-50px);
-  }
-
-  body .containerOne .card .box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.03);
-  }
-
-  body .containerOne .card .box .content {
-    padding: 20px;
-    text-align: center;
-  }
-
-  body .containerOne .card .box .content h2 {
-    position: absolute;
-    top: -10px;
-    right: 30px;
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.1);
-  }
-
-  body .containerOne .card .box .content h3 {
-    font-size: 1.8rem;
-    color: #fff;
-    z-index: 1;
-    transition: 0.5s;
-    margin-bottom: 15px;
-  }
-
-  body .containerOne .card .box .content p {
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    transition: 0.5s;
-  }
-
-  body .containerOne .card .box .content a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    background: black;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-  }
-
-  body .containerOne .card .box .content a:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    background: #fff;
-    color: #000;
-  }
 </style>
 
 <body>
@@ -289,69 +73,76 @@
   <section id="titleProject">
     <span>My Projects</span>
   </section>
-  <section>
-    <div class="containerOne" style="padding-top: 140px;">
+  <section style="padding-top: 200px; padding-left: 30px; padding-right: 30px;">
+    <div class="card-deck">
       <div class="card">
-        <div class="box">
-          <div class="content">
-            <h3><b>PrecisePal</b></h3>
-            <p>An OCR app which enables users to detect texts from pictures.<br><br>
-              Technology Used: Java, Android Studio, Python, Kotlin, Firebase MLKit</p>
-            <a href="https://github.com/gayatri517/PrecisePal">View</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <h3><b>Medic O' Clock</b></h3>
-            <p> Medic O’ Clock is an online platform for doctors and patients for appointment
-              booking and time scheduling.<br><br>
-              Tools Used : HTML, CSS, JavaScript, passport.js, MongoDB, Mongoose, EJS</p>
-            <a href="https://github.com/gayatri517/Medic-O-Clock">View</a>
-          </div>
+        <img class="card-img-top" style="height: 250px;" src="images/PrecisePal.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/gayatri517/PrecisePal">PrecisePal</a></h5>
+          <p class="card-text">An OCR app which enables users to detect texts from pictures.<br>
+            Technology Used: Java, Android Studio, Python, Kotlin, Firebase MLKit</p>
         </div>
       </div>
       <div class="card">
-        <div class="box">
-          <div class="content">
-            <h3><b>Smart Home System</b></h3>
-            <p> A smart home framework that switches on the fan and light when it senses
-              anybody’s presence<br><br>
-              Tools Used : Arduino IDE</p>
-            <a href="https://github.com/gayatri517/SmartHomeSystem">View</a>
-          </div>
+        <img class="card-img-top" style="height: 250px;" src="images/Medic.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/gayatri517/Medic-O-Clock">Medic O’ Clock</a></h5>
+          <p class="card-text">Medic O’ Clock is an online platform for doctors and patients for appointment
+            booking and time scheduling.<br>
+            Tools Used : HTML, CSS, JavaScript, passport.js, MongoDB, Mongoose, EJS</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" style="height: 250px;" src="images/parkinson.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/gayatri517/Parkinson-disease-detection">Parkinson Disease Detection</a></h5>
+          <p class="card-text">A machine learning
+            model that detects the presence of Parkinson Disease in a patient using various parameters.<br>
+            Tools Used : sklearn, SVM, Python</p>
         </div>
       </div>
     </div>
-  </section>
-  <section>
-    <div class="containerOne">
+    <br>
+    <!-- Part 2 -->
+    <div class="card-deck">
       <div class="card">
-        <div class="box">
-          <div class="content">
-            <h3><b>A star Alogrithm</b></h3>
-            <p>Implementation of the
-              A star algorithm used for path finding and obstacle avoidance in 2D. It is implemented using Pygame.</p>
-            <a href="https://github.com/gayatri517/A-star-algorithm-2D">View</a>
-          </div>
+        <img class="card-img-top" style="height: 250px;" src="images/tin.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/gayatri517/TinDog">TinDog</a></h5>
+          <p class="card-text">Tindog is tinder for dogs. It is a front end static webpage to learn about UI/UX. <br>
+            Tools Used : HTML, CSS</p>
         </div>
       </div>
-
       <div class="card">
-        <div class="box">
-          <div class="content">
-            <h3><b>Simon Game</b></h3>
-            <p>This game puts the user's memory to the test. The player’s goal is to recreate the order in which the game flashes
-              the coloured boxes and as the game progresses the number of flashed boxes increases,
-              The level raises and another colour flashes if the correct button is pressed. <br>
-              Tools Used : HTML, CSS, JavaScript</p>
-            <a href="https://github.com/gayatri517/Simon-Game">View</a>
-          </div>
+        <img class="card-img-top" style="height: 250px;" src="images/astar.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/gayatri517/A-star-algorithm-2D">A star Algorithm</a></h5>
+          <p class="card-text">Implementation of the
+            A star algorithm used for path finding and obstacle avoidance in 2D. It is implemented using Pygame.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" style="height: 250px;" src="images/smart.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/gayatri517/SmartHomeSystem">Smart Home System</a></h5>
+          <p class="card-text">A smart home framework that switches on the fan and light when it senses
+            anybody’s presence<br>
+            Tools Used : Arduino IDE</p>
         </div>
       </div>
     </div>
+    <br>
+    <div class="card" style="width: 29rem;">
+      <img class="card-img-top" style="height: 250px;" src="images/simon.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://github.com/gayatri517/Simon-Game">Simon Game</a></h5>
+        <p class="card-text">This game puts the user's memory to the test. The player’s goal is to recreate the order in which the game flashes
+          the coloured boxes and as the game progresses the number of flashed boxes increases,
+          The level raises and another colour flashes if the correct button is pressed. <br>
+          Tools Used : HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+    <br>
   </section>
 </body>
 
