@@ -409,7 +409,13 @@ left: 0%;
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 900px) {
   #title{
+    position: static;
+    padding-top: 100px;
     text-align: center;
   }
+  #social-sidebar {
+    visibility: hidden;
+  }
+}
